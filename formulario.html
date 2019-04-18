@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css-formulario.css" />
+        <title>Formulario Test</title>
+    </head>
+    <body>
+        <!-- ... -->
+        <fieldset>
+            <legend><h1>FORMULÁRIO TEST 1</h1></legend>
+            <h2>I. DATOS PERSONALES</h2> <br> 
+            <form method="POST" action="">
+                <div>
+                    <label for="name">
+                    Apellido</label>
+                        <input type="text" size="30" id="name" name="user_name" placeholder="1er Apellido"/><br/>
+                    <label for="name">
+                    2º Apellido</label>
+                        <input type="text" size="30" id="name" name="user_name" placeholder="2º Apellido"/><br/>
+                    <label for="name">
+                    Nombre</label>
+                        <input type="text" size="30" id="name" name="user_name" placeholder="Nombre"/><br/>
+                    <label for="name">
+                    Dirección</label>
+                        <select>
+                            <option>Selecciona</option>
+                            <option>Calle</option>
+                            <option>Avenida</option>
+                        </select>
+                        <input type="text" size="20" id="name" name="address" placeholder="Domicilio"/>
+                        <input type="number" size="10" id="number" placeholder="Nº del edifício"/><br>
+                    <label for="name">Piso</label>
+                        <input type="number" size="5" id="number" placeholder="Nº del Piso" max="15"/>
+                        <input type="text" size="5" id="name" placeholder="Puerta" maxlength="1"/><br>
+                </div>
+                <div>
+                    <label for="select">Sexo</label>
+                    <select>
+                        <option>Selecciona</option>
+                        <option>Hombre</option>
+                        <option>Mujer</option>
+                    </select><br><br>
+                    <label for="text">Estado Civíl</label><br>
+                        <input type="radio" name="select"/>Soltero(a) 
+                        <input type="radio" name="select"/>Soltero(a) con <input type="number" size="5" id="number" placeholder="Numero" max="5"/> hijo(s)<br>
+                        <input type="radio" name="select"/>Casado(a)
+                        <input type="radio" name="select"/>Casado(a) con <input type="number" size="5" id="number" placeholder="Numero" max="5"/> hijo(s)<br>
+                        <input type="radio" name="select"/>Viudo
+                        <input type="radio" name="select"/>Viudo(a) con <input type="number" size="5" id="number" placeholder="Numero" max="5"/> hijo(s)
+                </div><br><br>
+                <div>
+                    <label for="text">Contactos</label><br>
+                        <input type="text" id="tel" placeholder="Telefono móvil" maxlength="9"/><br>
+                        <input type="text" id="tel" placeholder="Telefono fijo" maxlength="9"/><br>
+                        <input type="text" id="tel" placeholder="Telefono de escritório" maxlength="9"/><br><br>
+                    <label for="text">Correos</label><br>
+                    <label for="text">E-mail:</label>
+                        <input type="email" id="email" placeholder="Correo electronico"/>
+                        <input type="email" id="email" placeholder="e-mail alternativo"/><br><br>
+                    <label for="text">Comentario</label><br>
+                        <textarea cols="70" rows="10" placeholder="Su opinión"></textarea><br><br>
+                    <label for="text">Foto</label>
+                        <input type="file" id="img"/><br><br>
+                    <label for="text"> PLAZO DE RESPONSABILIDAD</label><br>
+                        <input type="checkbox" id="select"/>
+                        <label>Reconozco haber visto, leído y analizado el código de este trabajo con el fin de aportar "+1" a la evolución del estudiante.
+                        </label><br><br>
+                        <input type="submit" placeholder="Inscribirse"/>
+                </div>
+            </form>
+        </fieldset>
+    </body>
+</html>
